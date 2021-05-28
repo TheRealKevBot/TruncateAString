@@ -6,8 +6,7 @@ function truncateString(str, num) {
         str = str.slice(0, num).concat('...')
         return str
     } else {
-        return 'Sorry, we are unable to truncate the string: '.concat(str + '. ') + 
-            'Given truncation number is too large for given string!'
+        return 'Sorry, we are unable to truncate the string: '.concat(str + '. Given truncation number is too large for given string!')
     }
   }
   
