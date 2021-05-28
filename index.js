@@ -6,8 +6,7 @@ function truncateString(str, num) {
         str = str.slice(0, num).concat('...')
         return str
     } else {
-        return 'Sorry, we are unable to truncate the string: '.concat(str + '. ') + 
-            'Given truncation number is too large for given string!'
+        return 'Sorry, we are unable to truncate the string: '.concat(str + '. Given truncation number is too large for given string!')
     }
   }
   
@@ -16,6 +15,4 @@ function truncateString(str, num) {
   console.log(truncateString("A-tisket a-tasket A green and yellow basket", "A-tisket a-tasket A green and yellow basket".length)); 
   console.log(truncateString("A-tisket a-tasket A green and yellow basket", "A-tisket a-tasket A green and yellow basket".length + 2)); 
   console.log(truncateString("A-", 1)); 
-  console.log(truncateString("Absolutely Longer", 2)); 
-  console.log(); 
-  console.log(); 
+  console.log(truncateString("Absolutely Longer", 2));
